@@ -17,7 +17,7 @@ spec:
       containers:
         - image: qhien/udagram-api-user:v4a
           name: api-user
-          imagePullPolicy: Always
+          imagePullPolicy: "Always"
           resources:
             requests:
               memory: "512Mi"

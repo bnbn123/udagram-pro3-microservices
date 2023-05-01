@@ -17,7 +17,7 @@ spec:
       containers:
         - image: qhien/udagram-api-feed:v4a
           name: api-feed
-          imagePullPolicy: Always
+          imagePullPolicy: "Always"
           resources:
             requests:
               memory: "512Mi"
