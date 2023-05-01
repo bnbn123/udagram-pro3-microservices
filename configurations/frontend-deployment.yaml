@@ -15,7 +15,7 @@ spec:
         service: frontend
     spec:
       containers:
-        - image: qhien/udagram-frontend:local
+        - image: qhien/udagram-frontend:v4a
           name: frontend
           imagePullPolicy: "Always"
           resources:
@@ -80,7 +80,7 @@ spec:
             - name: aws-secret
               mountPath: "/root/.aws/"
               readOnly: true
-      restartPolicy: Always
+      restartPolicy: "Always"
       volumes:
         - name: aws-secret
           secret:

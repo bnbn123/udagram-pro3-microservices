@@ -23,7 +23,7 @@ script:
   - docker tag udagram-reverseproxy qhien/reverseproxy:v4a
   - docker tag udagram-api-feed qhien/udagram-api-feed:v4a
   - docker tag udagram-api-user qhien/udagram-api-user:v4a
-  - docker tag udagram-frontend qhien/udagram-frontend:local
+  - docker tag udagram-frontend qhien/udagram-frontend:v4a
 
 # Build and Push
 after_success:
@@ -31,4 +31,4 @@ after_success:
   - docker push qhien/reverseproxy:v4a
   - docker push qhien/udagram-api-feed:v4a
   - docker push qhien/udagram-api-user:v4a
-  - docker push qhien/udagram-frontend:local
+  - docker push qhien/udagram-frontend:v4a
